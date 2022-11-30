@@ -1,0 +1,138 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url("/public/assets/header.jpg") center/cover no-repeat;
+    background-color: var(--grey-100);
+
+}
+
+header h2,
+h3,
+h4,
+p {
+    color: var(--white);
+    letter-spacing: var(--letterSpacing);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.header-blurr {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-container {
+    display: grid;
+    gap: 0 2rem;
+    width: 90vw;
+    height: 100%;
+    padding-top: 5rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 70%;
+}
+
+.text {
+    background: linear-gradient(45deg, #cc33ff 39%, #0099ff 77%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-btn {
+    width: 30%;
+    font-weight: bold;
+}
+
+.animationContainer {
+    width: 100%;
+    height: 100%px;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerJs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+.iconContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 5s infinite linear;
+}
+
+#jsIcon {
+    background-color: transparent;
+    font-size: 7rem;
+    border-radius: 50%;
+    color: #0099ff;
+}
+
+.iconContainer::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ffff00;
+    box-shadow: 0 0 50px #ffff00;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.iconContainer::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ff00d7;
+    box-shadow: 0 0 50px #ff00d7;
+    position: absolute;
+    top: 110px;
+    right: -20px;
+    border-radius: 50%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+@media screen and (min-width:992px) {
+    header {
+            height: 70vh;
+        }
+    
+        .header-container {
+            margin-top: 1rem;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            column-gap: 7rem;
+            padding-top: 0;
+            justify-content: center;
+        }
+    
+        .headerJs {
+            justify-content: flex-end;
+        }
+}

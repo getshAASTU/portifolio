@@ -1,0 +1,136 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.nav-center {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: var(--max-width);
+    margin: 0 auto;  
+}
+.scroll-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    position: relative;
+}
+
+.nav-header p {
+    display: inline;
+    color: var(--primary-500);
+    position: absolute;
+    bottom: 2rem;
+    left: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#nav-laptop {
+    position: absolute;
+    left: 10rem;
+    bottom: 2.1rem;
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.logo-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-top: -0.65rem;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    padding: 0.15rem 0.75rem;
+    margin-top: -1rem;
+}
+
+.list-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: var(--transition);
+    border-radius: var(--borderRadius);
+}
+
+.nav-list:first-child {
+    border-top: none;
+}
+
+.nav-list:last-child {
+    padding-bottom: 1rem;
+}
+
+.nav-item {
+    cursor: pointer;
+    text-transform: capitalize;
+    display: block;
+    padding-top: .5rem;
+    margin-right: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: var(--letterSpacing);
+    border-top: solid var(--primary-100) 1px;
+    transition: var(--transition);
+}
+
+.nav-item a:hover {
+    color: var(--primary-500);
+}
+
+#darkTheme {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+@media screen and (min-width:992px) {
+    .toggle-btn {
+            display: none;
+        }
+    
+        .navbar {
+            height: 6rem;
+            background-color: transparent;
+        }
+    
+        .nav-center {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .list-container {
+            height: auto !important;
+        }
+    
+        .nav-item {
+            border-top: none;
+            margin-left: 1rem;
+        }
+    
+        .nav-list {
+            flex-direction: row;
+            width: 100%;
+            background-color: transparent;
+        }
+    
+}

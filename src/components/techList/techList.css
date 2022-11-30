@@ -1,0 +1,39 @@
+.tech-iconsContainer {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    animation: iconSlide 15s linear infinite;
+}
+
+.icons {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+@keyframes iconSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
+}

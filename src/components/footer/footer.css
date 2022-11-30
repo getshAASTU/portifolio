@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--gray-dark);
+}
+
+.footer-content {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-content li span {
+    margin-left: 1rem;
+}
+.footer-content li span:hover{
+    color: var(--primary-400);
+}
+
+@media screen and (min-width:992px) {
+    .footer-content {
+            flex-direction: row;
+            justify-content : space-around;
+        }
+}
