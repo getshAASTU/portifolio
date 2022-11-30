@@ -55,6 +55,12 @@
     font-weight: bolder;
     color: var(--primary-600);
 }
+.project-btn:hover{
+    background-color: var(--primary-600);
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+    border: solid 1px var(--gray-dark);
+}
 .next-btn {
     position: absolute;
     top: 50%;
