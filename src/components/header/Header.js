@@ -16,7 +16,9 @@ const Header = () => {
               starting from scratch upto the final deployment. This is the place
               where your dream comes true.
             </p>
-            <button className="btn contact-btn">contact me</button>
+            <a className="btn contact-btn" href="#footer">
+              contact me
+            </a>
           </div>
           <div className="headerJs">
             <div className="animationContainer">

@@ -54,12 +54,12 @@
     font-size: larger;
     font-weight: bolder;
     color: var(--primary-600);
+    text-align: center;
 }
 .project-btn:hover{
     background-color: var(--primary-600);
     border-radius: var(--borderRadius);
     cursor: pointer;
-    border: solid 1px var(--gray-dark);
 }
 .next-btn {
     position: absolute;
