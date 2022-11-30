@@ -66,8 +66,8 @@
     color: var(--primary-500); 
 }
 .scroll-icon{
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: fixed;
     bottom: 3rem;
-    right: 3rem;
+    right: .5rem;
 }

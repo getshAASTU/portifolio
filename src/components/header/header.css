@@ -10,7 +10,7 @@ header {
 header h2,
 h3,
 h4,
-p {
+p{
     color: var(--white);
     letter-spacing: var(--letterSpacing);
     font-weight: bold;

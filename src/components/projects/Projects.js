@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { projectsList } from "../../consts/projectsData";
-import { GrProjects } from "react-icons/gr";
+import { GrProjects, GrFormPrevious, GrFormNext } from "react-icons/gr";
 import "./projects.css";
 
 const Projects = (props) => {
   const [index, setIndex] = useState(0);
-  const { id, name, desc, img } = projectsList[index];
+  const { name, desc, image } = projectsList[index];
   const checkNumber = (number) => {
     if (number > projectsList.length - 1) {
       return 0;
@@ -40,11 +40,7 @@ const Projects = (props) => {
         <div className="projectContent">
           <div className="projects-list">
             <div>
-              <img
-                src={`/assets/${props.img}`}
-                alt="portofil"
-                className="projectImg"
-              />
+              <img src={image} alt={name} className="projectImg" />
             </div>
             <h5 style={{ color: "black" }}>{name}</h5>
             <p>{desc}</p>
@@ -53,16 +49,16 @@ const Projects = (props) => {
         <button
           type="button"
           onClick={() => prevPerson()}
-          className="prev-btn btn"
+          className="prev-btn project-btn"
         >
-          prev
+          <GrFormPrevious />
         </button>
         <button
           type="button"
           onClick={() => nextPerson()}
-          className="next-btn btn"
+          className="next-btn project-btn"
         >
-          Next
+          <GrFormNext />
         </button>
       </div>
     </div>
