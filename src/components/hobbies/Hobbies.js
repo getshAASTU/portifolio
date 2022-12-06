@@ -1,14 +1,14 @@
-import React,{useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./hobbies.css";
 
 const Hobbies = (props) => {
-  const [position, setPosition] =useState()
-  useEffect(()=>{
-    const element = document.querySelector(".hobbies-container");
-    console.log(element)
-     setPosition(() => element.offsetTop); 
-    console.log(position);
-  },[position])
+  const [position, setPosition] = useState();
+  // useEffect(()=>{
+  //   const element = document.querySelector(".hobbies-container");
+  //   console.log(element)
+  //    setPosition(() => element.offsetTop);
+  //   console.log(position);
+  // },[position])
   return (
     <section className="hobbies-container">
       <div className=" hobbies">
