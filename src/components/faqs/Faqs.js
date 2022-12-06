@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaQuestion } from "react-icons/fa";
 import { BsChevronDown, BsArrowUpCircle } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
@@ -42,7 +42,6 @@ const Faqs = () => {
         {questions.map((item, index) => {
           const { id, question, answer } = item;
           return (
-            <>
               <div
                 key={id}
                 className="questionAndanswer"
@@ -66,7 +65,7 @@ const Faqs = () => {
                   {answer}
                 </p>
               </div>
-            </>
+            
           );
         })}
       </div>

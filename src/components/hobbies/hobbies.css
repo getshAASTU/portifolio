@@ -1,0 +1,63 @@
+.hobbies-container{
+  width: 100%;
+}
+.hobbies{
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* border: solid pink 1px; */
+}
+.hobby{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.hobbyImg{
+  border-radius: 8px;
+  /* padding: 1rem; */
+  margin-top: 1rem;
+}
+.hobbyText{
+  transform: translateX(150px);
+    /* opacity: 0; */
+}
+.hobbyText:hover{
+  /* opacity: 1; */
+  transform: translateX(0);
+  transition: all ease-in-out 1s;
+}
+.img-container{
+  transform: translateX(-150px);
+  /* opacity: 0; */
+}
+.img-container:hover{
+  transform: scale(1.1);
+  /* opacity: 1; */
+  transform: translateX(0);
+  transition: all ease-in-out 1s;
+}
+.hobby h4{
+  color: rgb(20,20,20);
+  padding-top: 1rem;
+}
+@media screen and (min-width:992px) {
+  .hobby{
+    flex-direction: row;
+    /* align-items: center; */
+  }
+  .hobbyText{
+    margin-left: 2rem;
+  }
+  .img-container{
+    width: 40%;
+    /* border: red solid 1px; */
+    margin-right: 2rem;
+  }
+  .hobbyImg{
+    width: 100%;
+  }
+  .sportsImg{
+    height: 75%;
+  }
+}
