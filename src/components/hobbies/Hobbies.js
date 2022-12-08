@@ -1,16 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./hobbies.css";
 
 const Hobbies = (props) => {
-  const [position, setPosition] = useState();
-  // useEffect(()=>{
-  //   const element = document.querySelector(".hobbies-container");
-  //   console.log(element)
-  //    setPosition(() => element.offsetTop);
-  //   console.log(position);
-  // },[position])
+
+  const scrollFunction = () => {
+    const imgContainer = document.querySelectorAll(".img-container");
+    const hobbiesContainer = document.querySelector(".hobbies-container");
+    const hobbyText = document.querySelectorAll(".hobbyText");
+    const triggerBottom = window.innerHeight/5*4
+    const hobbiesContainerTop = hobbiesContainer.getBoundingClientRect().top
+    if (hobbiesContainerTop < triggerBottom) {
+      imgContainer.forEach((imgcon) => {
+        imgcon.classList.add("hobbyImgAnimate");
+      });
+      hobbyText.forEach((textcon) => {
+        textcon.classList.add("hobbyTextAnimate");
+      });
+    }
+     else{
+      imgContainer.forEach((imgcon) => {
+        imgcon.classList.remove("hobbyImgAnimate");
+      });
+      hobbyText.forEach((textcon) => {
+        textcon.classList.remove("hobbyTextAnimate");
+      });
+    }
+  }
+  window.addEventListener("scroll", scrollFunction);
   return (
-    <section className="hobbies-container">
+    <section  className="hobbies-container">
+      <div className="hobbyTitle">
+        <h3>Hobbies</h3>
+      </div>
       <div className=" hobbies">
         <div className="hobby">
           <div className="img-container">

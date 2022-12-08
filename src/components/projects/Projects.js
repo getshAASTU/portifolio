@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { projectsList } from "../../consts/projectsData";
 import { GrProjects, GrFormPrevious, GrFormNext } from "react-icons/gr";
 import "./projects.css";
-
+import Project from "./Project";
 const Projects = (props) => {
   const [index, setIndex] = useState(0);
-  const { name, desc, image } = projectsList[index];
   const checkNumber = (number) => {
     if (number > projectsList.length - 1) {
       return 0;
@@ -20,6 +19,21 @@ const Projects = (props) => {
       return checkNumber(newIndex);
     });
   };
+  const handleIndex=()=>{
+    console.log(`huruy ${index}`)
+   if(index < projectsList.length-1){
+    setIndex(index+1)
+   }
+   else setIndex(0);
+  }
+  useEffect(()=>{
+    const interval=setInterval(()=>{
+      handleIndex()
+    },2000)
+    return ()=>{
+      clearInterval(interval)
+    }
+  },[index])
   const prevPerson = () => {
     setIndex((index) => {
       let newIndex = index - 1;
@@ -37,15 +51,7 @@ const Projects = (props) => {
           />
           <h3>Projects</h3>
         </div>
-        <div className="projectContent">
-          <div className="projects-list">
-            <div>
-              <img src={image} alt={name} className="projectImg" />
-            </div>
-            <h5 style={{ color: "black" }}>{name}</h5>
-            <p>{desc}</p>
-          </div>
-        </div>
+        <Project id={index} />
         <button
           type="button"
           onClick={() => prevPerson()}

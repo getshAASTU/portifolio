@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillMoonFill } from "react-icons/bs";
+// import { BsFillMoonFill } from "react-icons/bs";
 import { GoThreeBars } from "react-icons/go";
 import { FaLaptopCode } from "react-icons/fa";
 import "./navbar.css";
@@ -19,6 +19,7 @@ const navToggle = (props) => {
   }
 };
 const Navbar = (props) => {
+  
   return (
     <nav className="navbar">
       <section className="nav-center">
@@ -58,11 +59,6 @@ const Navbar = (props) => {
             <li className="nav-item">
               <a href="#faqs" className="scroll-link">
                 FAQS
-              </a>
-            </li>
-            <li className="nav-item">
-              <a type="button" id="darkTheme">
-                <BsFillMoonFill />
               </a>
             </li>
           </ul>

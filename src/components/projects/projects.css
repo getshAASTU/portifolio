@@ -37,11 +37,12 @@
     height: 100%;
 }
 
-.projectImg {
+/* .projectImg {
     width: 100%;
     border-radius: var(--borderRadius);
     height: 400px;
-}
+} */
+
 
 .prev-btn {
     position: absolute;

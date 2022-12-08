@@ -7,6 +7,7 @@ import TechList from "./components/techList/TechList";
 import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
 import Hobbies from "./components/hobbies/Hobbies";
+import React from "react";
 
 function App() {
   return (

@@ -1,11 +1,12 @@
 .hobbies-container{
   width: 100%;
+  overflow-x: hidden;
+  /* border: red solid 1px; */
 }
 .hobbies{
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
-  /* border: solid pink 1px; */
 }
 .hobby{
   display: flex;
@@ -15,27 +16,35 @@
 }
 .hobbyImg{
   border-radius: 8px;
-  /* padding: 1rem; */
   margin-top: 1rem;
+}
+.hobbyTitle{
+  display: flex;
+  justify-content: center;
+}
+.hobbyTitle h3{
+  color:rgb(20, 20, 20);
 }
 .hobbyText{
   transform: translateX(150px);
-    /* opacity: 0; */
+    opacity: 0;
 }
-.hobbyText:hover{
-  /* opacity: 1; */
-  transform: translateX(0);
-  transition: all ease-in-out 1s;
+.hobbyTextAnimate{
+  opacity: 1;
+    transform: translateX(0);
+    transition: all ease-in-out 3s;
+
 }
 .img-container{
   transform: translateX(-150px);
-  /* opacity: 0; */
+  opacity: 0;
 }
-.img-container:hover{
-  transform: scale(1.1);
-  /* opacity: 1; */
+.hobbyImgAnimate{
+  /* transform: scale(1.1); */
+  opacity: 1;
   transform: translateX(0);
-  transition: all ease-in-out 1s;
+  transition: all ease-in-out 3s;
+
 }
 .hobby h4{
   color: rgb(20,20,20);
@@ -44,14 +53,12 @@
 @media screen and (min-width:992px) {
   .hobby{
     flex-direction: row;
-    /* align-items: center; */
   }
   .hobbyText{
     margin-left: 2rem;
   }
   .img-container{
     width: 40%;
-    /* border: red solid 1px; */
     margin-right: 2rem;
   }
   .hobbyImg{
