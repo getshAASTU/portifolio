@@ -1,8 +1,8 @@
 // import "./App.css";
 import About from "./components/about/About";
-import Header from "./components/header/Header";
+import Header from "./components/layouts/header/Header";
 import Faqs from "./components/faqs/Faqs";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/layouts/footer/Footer";
 import TechList from "./components/techList/TechList";
 import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";

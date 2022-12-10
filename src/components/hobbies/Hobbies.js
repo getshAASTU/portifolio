@@ -1,4 +1,5 @@
 import React from "react";
+import {GiGamepad} from 'react-icons/gi'
 import "./hobbies.css";
 
 const Hobbies = (props) => {
@@ -30,6 +31,7 @@ const Hobbies = (props) => {
   return (
     <section  className="hobbies-container">
       <div className="hobbyTitle">
+        <GiGamepad className="hobby-icon"/>
         <h3>Hobbies</h3>
       </div>
       <div className=" hobbies">
@@ -42,7 +44,7 @@ const Hobbies = (props) => {
             />
           </div>
           <div className="hobbyText">
-            <h4>What Better Way To Spend my Free Time than Coding</h4>
+            <h5>What Better Way To Spend my Free Time than Coding</h5>
             <p>
               Who does not love coding? just only who can start it. When I code
               I feel happy. I feel as if I have other no worries and all I need
@@ -62,7 +64,7 @@ const Hobbies = (props) => {
             />
           </div>
           <div className="hobbyText">
-            <h4>Playing Video Games and watching soccer matches</h4>
+            <h5>Playing Video Games and watching soccer matches</h5>
             <p>
               GOOOOOOOOAL!!!! Watching sports and Playing Video games is very
               relaxing to me. It's Plain and Simple Fun, Makes You Smarter, and

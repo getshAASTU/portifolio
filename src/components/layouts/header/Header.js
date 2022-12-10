@@ -1,6 +1,6 @@
 import React from "react";
 import { GrReactjs } from "react-icons/gr";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../../navbar/Navbar";
 import "./header.css";
 
 const Header = () => {

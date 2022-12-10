@@ -2,7 +2,7 @@ import React from "react";
 import { projectsList } from "../../consts/projectsData";
 
 const Project = ({ id }) => {
-  console.log(`huruy ${id}`)
+  
   const { name, desc, image } = projectsList[id];
   return (
     <div className="projectContent">

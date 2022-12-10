@@ -6,6 +6,22 @@ import { GrHost, GrServices } from "react-icons/gr";
 import "./services.css";
 
 const Services = (props) => {
+  const scrollFunction = () => {
+    const serviceAnimate = document.querySelectorAll(".animate");
+    const serviceContainer = document.querySelector(".service-container");
+    const triggerBottom = (window.innerHeight / 5) * 4;
+    const serviceContainerTop = serviceContainer.getBoundingClientRect().top;
+    if (serviceContainerTop < triggerBottom) {
+      serviceAnimate.forEach((servicCon) => {
+        servicCon.classList.add("serviceAnimate");
+      });
+    } else {
+      serviceAnimate.forEach((servicCon) => {
+        servicCon.classList.remove("serviceAnimate");
+      });
+    }
+  };
+  window.addEventListener("scroll", scrollFunction);
   return (
     <section className="service-container" id="services">
       <div className="service-title">
@@ -17,10 +33,10 @@ const Services = (props) => {
         <h3>Services</h3>
       </div>
       <div className="services">
-        <div className="service-img">
+        <div className="service-img animate">
           <img src={`/assets/${props.img}`} alt="" className="img" />
         </div>
-        <div>
+        <div className="serviceText animate">
           <div className="service-desc">
             <div className="serviceIcon-container">
               <FiHexagon className="serviceMain-icon" />

@@ -1,7 +1,6 @@
-
 .service-container{
-    width: 100%;
-   
+    width: 100%; 
+    overflow: hidden;
 }
 .services{
     width: 90vw;
@@ -21,7 +20,19 @@
 }
 .service-title h3{
     color: var(--gray-dark);
-
+}
+.service-img{
+    transform: translateX(-300px);
+    opacity: 0.5;
+}
+.serviceText{
+    transform: translateX(300px);
+    opacity: 0.5;
+}
+.serviceAnimate{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 2s ease-in-out;
 }
 .service-img img{
     border-radius: 8px;
@@ -29,13 +40,14 @@
 .services h5{
     color: var(--primary-600);
 }
-.service-desc p{
-    font-size: 0.85rem;
-    margin-top: -1rem;
-}
-.service-desc{
+.service-desc {
     display: flex;
     margin-top: .4rem;
+}
+.service-desc p{
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    color: var(--black);
 }
 .serviceIcon-container{
     position: relative;
@@ -43,15 +55,14 @@
 }
 .serviceInner-icon{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left:35%;
 
 }
 .serviceMain-icon{
     font-size: 3rem;
-    color: var(--primary-600);
+    color: var(--primary-500);
 }
-
 @media screen and (min-width:992px) {
 .services{
     flex-direction: row;
@@ -61,5 +72,8 @@
     margin-right: 1.5rem;
     margin-top: 1rem;
 }
-
+.serviceInner-icon {
+    top: 20%;
+    left: 35%;
+}
 }

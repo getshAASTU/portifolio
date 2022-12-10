@@ -1,7 +1,10 @@
 .hobbies-container{
   width: 100%;
+  display: flex;
+  margin-top: -7rem;
+  flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
-  /* border: red solid 1px; */
 }
 .hobbies{
   width: 90vw;
@@ -19,20 +22,31 @@
   margin-top: 1rem;
 }
 .hobbyTitle{
-  display: flex;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    font-size: 3rem;
+}
+.hobby-icon{
+  color: var(--primary-500);
+  font-size: 5rem;
 }
 .hobbyTitle h3{
   color:rgb(20, 20, 20);
 }
 .hobbyText{
   transform: translateX(150px);
-    opacity: 0;
+  opacity: 0;
+}
+.hobbyText p{
+  color: var(--black);
 }
 .hobbyTextAnimate{
   opacity: 1;
-    transform: translateX(0);
-    transition: all ease-in-out 3s;
+  transform: translateX(0);
+  transition: all ease-in-out 2s;
 
 }
 .img-container{
@@ -40,22 +54,41 @@
   opacity: 0;
 }
 .hobbyImgAnimate{
-  /* transform: scale(1.1); */
   opacity: 1;
   transform: translateX(0);
   transition: all ease-in-out 3s;
 
 }
-.hobby h4{
+.hobby h5{
   color: rgb(20,20,20);
-  padding-top: 1rem;
+  font-weight: bold;
+  padding-top: 0.7rem;
+}
+
+.hobbyText::-webkit-scrollbar {
+  width: 2px;
+}
+
+.hobbyText::-webkit-scrollbar-track {
+  width: 1px;
+  border-radius: 6px;
+}
+
+.hobbyText::-webkit-scrollbar-thumb {
+  width: 3px;
+  border-radius: 6px;
+  background-color: var(--primary-600);
 }
 @media screen and (min-width:992px) {
   .hobby{
     flex-direction: row;
+    justify-content: space-around;
   }
   .hobbyText{
-    margin-left: 2rem;
+    margin-left: -4rem;
+    width: 40%;
+    height: 250px;
+    overflow-y: scroll;
   }
   .img-container{
     width: 40%;

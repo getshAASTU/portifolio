@@ -31,6 +31,7 @@
 }
 .questionAndanswer p {
     font-size: 0.8rem;
+    color: var(--black);
 }
 .question {
     display: flex;

@@ -1,14 +1,20 @@
 .projects-container {
     width: 100%;
     margin: 2rem 0;
+    height: 100vh;
 }
-
 .projects {
     width: 90vw;
     height: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
     position: relative;
+}
+#projectIcon{
+    color: var(--primary-500);
+}
+.projectImgs,.projectImg{
+    border-radius: 8px;
 }
 .project-title {
     margin: 0 auto;
@@ -25,45 +31,27 @@
 .projects p{
     margin-top: -1rem;
 }
+h5{
+    font-weight: bold;
+}
 
 .projectContent {
-    width: 90%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .projects-list {
     width: 100%;
     height: 100%;
 }
-
-/* .projectImg {
-    width: 100%;
-    border-radius: var(--borderRadius);
-    height: 400px;
-} */
-
-
-.prev-btn {
+.projects-list{
     position: absolute;
-    top: 50%;
-    left: 0;
 }
-.project-btn{
-    background-color: transparent;
-    border: none;
-    font-size: larger;
-    font-weight: bolder;
-    color: var(--primary-600);
-    text-align: center;
-}
-.project-btn:hover{
-    background-color: var(--primary-600);
-    border-radius: var(--borderRadius);
-    cursor: pointer;
-}
-.next-btn {
-    position: absolute;
-    top: 50%;
-    right: 0;
+@media screen and (max-width:768px) {
+    .projects-container{
+        height: 45vh;
+    }
+    
 }
