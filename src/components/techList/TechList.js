@@ -11,7 +11,7 @@ const TechList = () => {
     <div className="tech-iconsContainer">
       <div className="tech-icons">
         <div className="tech-icon">
-          <TiHtml5 className="icons" style={{ color: "#ffa62f" }} />
+          <TiHtml5 className="icons" style= {{ color: "#ffa62f" }} />
         </div>
         <div className="tech-icon">
           <SiCss3 className="icons" style={{ color: "#ee82ee" }} />

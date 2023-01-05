@@ -13,7 +13,9 @@
     flex-direction: column;
 
 }
-
+.footerIcon{
+    color: aqua;
+}
 .footer-content li span {
     margin-left: 1rem;
 }

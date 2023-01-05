@@ -13,19 +13,19 @@ const Footer = () => {
         <div className="footer-list">
           <ul>
             <li>
-              <FaFacebookSquare />
+              <FaFacebookSquare  className="footerIcon" />
               <span>Facebook</span>
             </li>
             <li>
-              <GrTwitter />
+              <GrTwitter  className="footerIcon"  />
               <span>Twitter</span>
             </li>
             <li>
-              <FaInstagramSquare />
+              <FaInstagramSquare  className="footerIcon" />
               <span>Instagram </span>
             </li>
             <li>
-              <BsLinkedin />
+              <BsLinkedin  className="footerIcon" />
               <span>LinkedIn</span>
             </li>
           </ul>
@@ -33,20 +33,20 @@ const Footer = () => {
         <div className="footer-list">
           <ul>
             <li>
-              <GoLocation />
-              <span>Adress: Addis Ababa</span>
+              <GoLocation  className="footerIcon"  />
+              <span>Addis Ababa</span>
             </li>
             <li>
-              <BsTelephoneOutbound />
-              <span>Phone:+251942269990</span>{" "}
+              <BsTelephoneOutbound  className="footerIcon" />
+              <span>+251942269990</span>{" "}
             </li>
             <li>
-              <HiOutlineMail />
-              <span>Email:goitomabebe5042@gmail.com</span>
+              <HiOutlineMail  className="footerIcon" />
+              <span>goitomabebe5042@gmail.com</span>
             </li>
             <li>
-              <BsGlobe2 />
-              <span>Website:www.meetgoitom.com</span>
+              <BsGlobe2  className="footerIcon"  />
+              <span>www.meetgoitom.com</span>
             </li>
           </ul>
         </div>

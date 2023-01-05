@@ -1,18 +1,24 @@
 import React from "react";
 import { projectsList } from "../../consts/projectsData";
 
-const Project = ({ id }) => {
-  
-  const { name, desc, image } = projectsList[id];
+const Project = () => {
   return (
-    <div className="projectContent">
-      <div className="projects-list">
-        <div className="projectImgs">
-          <img src={image} alt={name} className="projectImg img" />
-        </div>
-        <h5 style={{ color: "black" }}>{name}</h5>
-        <p>{desc}</p>
-      </div>
+    <div className="grid">
+      {projectsList.map((project) => {
+        const { name, image, href, id } = project;
+        return (
+          <a href={href} target="_blank" rel="noreferrer" key={id}>
+            <div className="card-container">
+              <div className="imageContainer">
+                <img className="card-img" src={image} alt={name} />
+              </div>
+              <div className="desc">
+                <h4>{name}</h4>
+              </div>
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
 };

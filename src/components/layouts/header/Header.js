@@ -11,13 +11,13 @@ const Header = () => {
           <Navbar img="about.jpg" />
           <div className="header-text">
             <h3 className="text">WEB DEVELOPER</h3>
-            <p style={{ color: "white" }}>
+            <p className="header-desc" style={{ color: "white" }}>
               I will help you build a website that perfectly fits your demands,
               starting from scratch upto the final deployment. This is the place
               where your dream comes true.
             </p>
             <a className="btn contact-btn" href="#footer">
-              contact me
+              Contact
             </a>
           </div>
           <div className="headerJs">

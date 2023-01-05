@@ -37,3 +37,8 @@
     }
 
 }
+@media screen and (max-width:768px) {
+    .icons{
+        font-size: 2rem;
+    }
+}

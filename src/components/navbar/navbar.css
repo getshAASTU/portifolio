@@ -96,12 +96,22 @@
 .nav-item a:hover {
     color: var(--primary-500);
 }
-
+.body{
+    background-color: var(--gray-dark);
+    color: #fff;
+  }
 #darkTheme {
     color: var(--white);
     font-size: 1rem;
 }
-
+@media screen and (max-width:328px) {
+   .logo-img, .span{
+    display: none;
+   }
+   .nav-header{
+    justify-content: flex-start;
+   }
+}
 @media screen and (min-width:992px) {
     .toggle-btn {
             display: none;

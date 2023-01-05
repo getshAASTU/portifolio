@@ -71,8 +71,7 @@ const Services = (props) => {
             <div>
               <h5>Database</h5>
               <p>
-                Have a customized database solution to store your business' data
-                both reliably and securely.
+                Have a customized database solution to store your business data both reliably and securely.
               </p>
             </div>
           </div>

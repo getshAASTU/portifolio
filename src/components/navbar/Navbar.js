@@ -1,5 +1,4 @@
 import React from "react";
-// import { BsFillMoonFill } from "react-icons/bs";
 import { GoThreeBars } from "react-icons/go";
 import { FaLaptopCode } from "react-icons/fa";
 import "./navbar.css";
@@ -19,14 +18,14 @@ const navToggle = (props) => {
   }
 };
 const Navbar = (props) => {
-  
+
   return (
     <nav className="navbar">
       <section className="nav-center">
         <div className="nav-header">
           <a href="#home" className="nav-logo">
             <img className="logo-img" src={`/assets/${props.img}`} alt="" />
-            <span>
+            <span className='span'>
               <p>GOITOM</p> <FaLaptopCode id="nav-laptop" />
             </span>
           </a>

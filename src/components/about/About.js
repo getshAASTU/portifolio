@@ -29,7 +29,7 @@ const About = (props) => {
                 applications including personal, business, e-commerce, and
                 healthcare web apps. I will help you build a web app which
                 perfectly fits your demand. Fast, Secure, and Responsive are the
-                descriptions of my web apps. <span>lets go to work!!</span>
+                descriptions of my web apps. <span>Lets go to work!!</span>
               </p>
             </div>
           </div>

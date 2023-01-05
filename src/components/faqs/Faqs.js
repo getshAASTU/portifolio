@@ -29,8 +29,9 @@ const Faqs = () => {
   const toggleAccordion = (index) => {
     if (index === accordion) {
       setAccordion(-1);
+    } else {
+      setAccordion(index);
     }
-    setAccordion(index);
   };
   return (
     <div id="faqs" className="faq-container">
@@ -42,36 +43,29 @@ const Faqs = () => {
         {questions.map((item, index) => {
           const { id, question, answer } = item;
           return (
-              <div
-                key={id}
-                className="questionAndanswer"
-                onClick={() => toggleAccordion(index)}
-              >
-                <div className="question">
-                  <div>
-                    <h5>{question}</h5>
-                  </div>
-                  <div>
-                    <button type="button" className="faq-btn">
-                      {accordion === index ? (
-                        <IoIosArrowUp />
-                      ) : (
-                        <BsChevronDown />
-                      )}
-                    </button>
-                  </div>
+            <div
+              key={id}
+              className="questionAndanswer"
+              onClick={() => toggleAccordion(index)}
+            >
+              <div className="question">
+                <div>
+                  <h5>{question}</h5>
                 </div>
-                <p className={accordion === index ? "" : "collapse"}>
-                  {answer}
-                </p>
+                <div>
+                  <button type="button" className="faq-btn">
+                    {accordion === index ? <IoIosArrowUp /> : <BsChevronDown />}
+                  </button>
+                </div>
               </div>
-            
+              <p className={accordion === index ? "" : "collapse"}>{answer}</p>
+            </div>
           );
         })}
       </div>
       <div className="scroll-icon">
         <a href="#home" onClick={scrollToTop}>
-          <BsArrowUpCircle style={{ display: visible ? "block" : "none" }} />
+          <BsArrowUpCircle style={{ display: visible ? "block" : "none", color:'aqua' }} />
         </a>
       </div>
     </div>
